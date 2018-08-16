@@ -3,7 +3,7 @@ body {
 }
 
 
-
+/* -------------HEADER AND NAV--------- */
 header {
     background-color: #056945;
     border: 2px solid white;
@@ -34,18 +34,46 @@ a {
     font-size: 1.3em;
 }
 
+
+
+/* ---------------------PICTURE AND ABOUT SECTION--------------- */
 p {
     font-family: 'Open Sans';
     color: white;
 }
-
 h2 {
     color: white;
     font-family: 'Raleway';
+}
+
+.aboutandpic {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+    
 }
 
 section {
     background: #056945;
     line-height: 1.8;
     font-size: 0.9em;
+    border: 2px solid white;
+    
+}
+.aboutMe {
+    width: 550px;
+    padding: 2em;
+
+}
+
+.profilePic {
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    padding: 2em 0;
+}
+.headshot {
+    width: 400px;
+    height: 400px;
+    
 }
