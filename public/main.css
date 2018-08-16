@@ -1,0 +1,51 @@
+body {
+    background-color: #69995D;
+}
+
+
+
+header {
+    background-color: #056945;
+    border: 2px solid white;
+    height: 14em;
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-end;
+
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding-left: 0;
+    
+}
+
+ul li {
+    border: 1px white solid;
+    padding: 0.5em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Raleway';
+    font-size: 1.3em;
+}
+
+p {
+    font-family: 'Open Sans';
+    color: white;
+}
+
+h2 {
+    color: white;
+    font-family: 'Raleway';
+}
+
+section {
+    background: #056945;
+    line-height: 1.8;
+    font-size: 0.9em;
+}
