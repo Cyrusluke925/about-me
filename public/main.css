@@ -7,6 +7,7 @@ body {
     background-position: center; 
     background-color: #EFF4ED; 
     opacity: 0.9;
+  
 }
 
 
@@ -34,6 +35,7 @@ h1 {
 
 nav {
     width: 100%;
+
 }
 .nav {
     margin-top: 0;
@@ -49,6 +51,7 @@ nav ul{
 
 ul {
     margin: 0;
+    width: 100%;
 }
 
 ul li {
@@ -97,6 +100,7 @@ section {
     margin: 2em 0;
     background-color:  #79AC6E;
     opacity: 0.9;
+    
     
     
 }
@@ -250,10 +254,44 @@ a:hover {
 
     }
 }
+
+
+
+@keyframes movingForm {
+    from {
+        margin-right: 100%;
+    }
+    to {
+        margin-right: 4%;
+    }
+}
+
+
+.info {
+    animation: movingForm 2s;
+}
+
 #typingDog {
     animation: movingPic 8s;
     animation-iteration-count: infinite;
     
 }
 
+
+
+
+
+@media screen and (max-width: 950px) {
+    .aboutandpic {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .reviewsandapi {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
