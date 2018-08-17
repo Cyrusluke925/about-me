@@ -8,23 +8,45 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="./main.css" />
-    <script src="./main.js" defer></script>
+   
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+       crossorigin="anonymous">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+       crossorigin="anonymous">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+       crossorigin="anonymous"></script>
+   <link rel="stylesheet" type="text/css" href="./main.css" />
+   <script src="./main.js" async defer></script>
 </head>
 <body>
     <header>
-        <h1>A LITTLE BIT ABOUT ME</h1>
-        <nav>
+        <h1>LUKE ENGLE</h1>
+        <!-- <nav>
             <ul>
-                <li><a href='#'>ABOUT</a></li>
-                <li><a href='#'>GALLERY</a></li>
-                <li><a href='#'>TESTIMONIALS</a></li>
+                <li><a href='#aboutandpic'>ABOUT</a></li>
+                <li><a href='#gallery'>GALLERY</a></li>
+                <li><a href='#testimonials'>TESTIMONIALS</a></li>
                 <li><a href='#'>CONTACT</a></li>
             </ul>
-        </nav>
+        </nav> -->
     </header>
     <main class="main">
         
-    <article class="aboutandpic">
+        <section class="nav">
+                <nav>
+                        <ul>
+                            <li><a href='#aboutandpic'>ABOUT</a></li>
+                            <li><a href='#gallery'>GALLERY</a></li>
+                            <li><a href='#testimonials'>TESTIMONIALS</a></li>
+                            <li><a href='#'>CONTACT</a></li>
+                        </ul>
+                    </nav>
+
+        </section>
+        <article class="aboutandpic" id="aboutandpic">
         <section class="aboutMe">
             <h2>ABOUT ME</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et nisl sapien. Sed porttitor non quam vitae lacinia. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus viverra posuere lobortis. Pellentesque in diam lacinia, egestas augue sed, malesuada neque. Donec at fringilla ex, eu finibus elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed ac tortor vitae nibh malesuada ullamcorper eu volutpat felis. Phasellus quam arcu, dapibus sed viverra nec, facilisis at augue. Proin vitae est sit amet nisi euismod fringilla. In purus dui, porta vel rhoncus eu, venenatis vitae est. Sed venenatis nulla sit amet faucibus feugiat. Nunc vitae laoreet est. Sed dolor nibh, commodo vel odio at, dapibus ornare orci.</p>
@@ -35,14 +57,69 @@
         </section>
 
     </article>
-        <section class="quotes">
+        <section class="slideshow" id="gallery">
+        
+
+
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img class="d-block w-100" src="./monument.png" alt="First slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="./supermarket.png" alt="Second slide">
+            </div>
+        <div class="carousel-item">
+        <img class="d-block w-100" src="./giffaw.png" alt="Third slide">
+        </div>
+        </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+        </div>
+
+
+
+
+
             
-
-
         </section>
+        <article class = "reviewsandapi">
+        <section class="spotify">
+                <h2>SPOTIFY</h2>
+        </section>
+        <section class ='testimonials' id='testimonials'>
+            <h2>TESTIMONIALS</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vestibulum nunc orci, sed vehicula nunc interdum a. In ligula massa, commodo sed ligula ut, tincidunt pretium orci. Nam tincidunt, magna a vehicula pellentesque, lacus diam convallis est, et commodo mauris enim at nunc. Cras accumsan nec velit in scelerisque. Nulla rhoncus nulla vel nunc luctus, ut ornare nibh faucibus. Etiam euismod lacus eget ipsum venenatis, sed molestie sem suscipit. Sed ullamcorper aliquam lectus. Aliquam erat volutpat. Nulla cursus est a purus porttitor, commodo rutrum urna aliquam. Sed elit leo, tempus eu ante nec, rutrum faucibus metus.</p>
+        </section>
+        
+    </article>
+
+
         <section class="contact">
+            <form class="information">
+                <input type="text" placeholder="name" class="info">
+                <input type="email" placeholder="email" class="info">
+                <input type= "phone" placeholder="phone number" class="info">
+                <textarea name="text" id="textarea" ></textarea>
+                <button type="submit">SUBMIT</button>
+            </form>
 
         </section>
+        <footer>
+
+        </footer>
 
     </main>
     

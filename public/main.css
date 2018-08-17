@@ -1,30 +1,60 @@
+
+
 body {
-    background-color: #69995D;
+    
+
+    background-size: cover; 
+    background-position: center; 
+    background-color: #EFF4ED; 
+    opacity: 0.9;
 }
 
 
 /* -------------HEADER AND NAV--------- */
 header {
-    background-color: #056945;
-    border: 2px solid white;
+    background-image: url('./sharp.jpg');
+   
     height: 14em;
     display: flex;
     flex-direction:column;
     justify-content: flex-end;
-
+    margin-bottom: 0;
 }
 
+h1 {
+    font-family: 'Raleway';
+    color: white;
+    text-align: center;
+    margin-bottom: 3.2em;
+    font-size: 2.7em; 
+    letter-spacing: 0.2em;
+    text-shadow: white 0 0 0;
+    
+}
+
+nav {
+    width: 100%;
+}
+.nav {
+    margin-top: 0;
+}
 nav ul{
     display: flex;
     list-style-type: none;
     justify-content: space-around;
+    align-items: center;
     padding-left: 0;
     
 }
 
+ul {
+    margin: 0;
+}
+
 ul li {
-    border: 1px white solid;
+    
     padding: 0.5em;
+    background-color: #79ac6e;
 }
 
 a {
@@ -32,6 +62,8 @@ a {
     color: white;
     font-family: 'Raleway';
     font-size: 1.3em;
+    font-weight: bolder;
+   
 }
 
 
@@ -39,25 +71,33 @@ a {
 /* ---------------------PICTURE AND ABOUT SECTION--------------- */
 p {
     font-family: 'Open Sans';
+    /* color: white; */
+    /* font-weight: bold; */
     color: white;
 }
 h2 {
     color: white;
     font-family: 'Raleway';
+    text-align: center;
+    border-bottom: 2px solid white;
+
 }
 
 .aboutandpic {
     display: flex;
     justify-content: space-around;
-    margin-top: 2em;
+    /* margin-top: 2em; */
     
 }
 
 section {
-    background: #056945;
+    
     line-height: 1.8;
     font-size: 0.9em;
-    border: 2px solid white;
+    margin: 2em 0;
+    background-color:  #79AC6E;
+    opacity: 0.9;
+    
     
 }
 .aboutMe {
@@ -67,13 +107,107 @@ section {
 }
 
 .profilePic {
-    width: 450px;
+    width: 400px;
+    height: 400px;
     display: flex;
     justify-content: center;
-    padding: 2em 0;
+   
 }
 .headshot {
     width: 400px;
     height: 400px;
+    
+} */
+
+
+
+
+
+ .carousel img{
+    width: 0%;
+    height: 500px;
+} 
+
+.testimonials {
+    margin: 0 4em;
+    padding: 1em 2em 1em 2em;
+    /* margin-bottom: 2em; */
+    margin: 2em 0;
+
+    width: 550px;
+    
+} 
+.slideshow {
+    margin: 0 4em 2em 4em;;
+}
+
+.reviewsandapi {
+    display: flex;
+   
+    justify-content: space-around;
+}
+
+.spotify {
+    width: 550px;
+}
+/* --------------------------FORM AREA============================== */
+.contact {
+    
+    margin: 0 4em;
+}
+
+
+form {
+    height: 40em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('./sharp.jpg');
+    
+} 
+
+ .info {
+    width: 70%;
+    height: 3em;
+    font-size: 16px;
+    background-color: #79ac6e;
+    border: 2px solid white;
+    margin: 2em 0;
+    opacity: 0.9;
+    
+
+    
+
+}
+
+::placeholder {
+    color: white;
+    font-size: 18px;
+}
+
+textarea {
+    width: 70%;
+    height: 15em;
+}
+
+button {
+    width: 70%;
+    height: 2em;
+    background-color: #79ac6e;
+    color: white;
+    font-family: 'Raleway';
+    font-size: 18px;
+    border: 2px solid white;
+    opacity: 0.9;
+    margin: 1em 0 1em 0;
+    padding-bottom: 1em;;
+}
+
+button:hover {
+    color: darkblue;
+}
+
+a:hover {
+    text-decoration: none;
     
 }
