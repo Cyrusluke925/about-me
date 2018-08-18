@@ -1,9 +1,18 @@
+
+$('document').ready(function() {
+ 
+
+//CAROUSEL INITIALIZES
 $('.carousel').carousel({
     interval: 2000
 });
 
 
+//TESTIMONIAL SECTION
+
 var textArray = ["If you could imagine a perfect person to work with, they couldn't compare with how great it is to work with Luke Engle. He is knowledgeable, fun to work with, and helpful. His passionate about web development and technology helps him write innovative code which he is  always willing to explain with ease. He is attentive, detail-oriented, and passionate about web development. His code is creative, communication unparalleled, and motivation inspiring. His dedication helps motivate the team and anyone who works with Luke is lucky.", "testimonials, Luke is a friendly, talkative, and energetic. General Assembly is his second coding course. He took Appacademy another month long challenging bootcamp learning how to code in Javascript, Koans, and Mocha framework. He got his aha moment when he figured out a coding problem.", 'whats good']
+
+
 var box = $('#textBox');
 var i = 0;
 
@@ -23,18 +32,14 @@ function timedText(arr) {
 
 
 		
-
-
-
-
 timedText(textArray)
 console.log(box)
 
 
+//END OF TESTIMONIAL FUNCTION
 
-$(document).ready(function(){
 
-    // Add scrollspy to <body>
+   //INITIALIZES SMOOTH SCROLL
     $('body').scrollspy({target: ".navbar", offset: 50});   
 
     // Add smooth scrolling on all links inside the navbar
@@ -62,9 +67,6 @@ $(document).ready(function(){
     particlesJS.load('particles-js', 'assets/particles.json', function() {
       console.log('callback - particles.js config loaded');
     });
+})
 
 
-  });
-
-
-$('form')
