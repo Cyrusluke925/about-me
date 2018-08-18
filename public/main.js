@@ -3,6 +3,33 @@ $('.carousel').carousel({
 });
 
 
+var textArray = ["If you could imagine a perfect person to work with, they couldn't compare with how great it is to work with Luke Engle. He is knowledgeable, fun to work with, and helpful. His passionate about web development and technology helps him write innovative code which he is  always willing to explain with ease. He is attentive, detail-oriented, and passionate about web development. His code is creative, communication unparalleled, and motivation inspiring. His dedication helps motivate the team and anyone who works with Luke is lucky.", "testimonials, Luke is a friendly, talkative, and energetic. General Assembly is his second coding course. He took Appacademy another month long challenging bootcamp learning how to code in Javascript, Koans, and Mocha framework. He got his aha moment when he figured out a coding problem.", 'whats good']
+var box = $('#textBox');
+var i = 0;
+
+function timedText(arr) {
+    var iterator = function (index) {
+        if (i >= arr.length) {
+            i = 0;
+        }
+        box.text(arr[i]);
+        setTimeout(function () {
+            iterator(++i);
+        }, 8000);
+    };
+
+    iterator(0);
+};
+
+
+$(".one").fadeIn(6000,function() {
+               $(".one").fadeOut(6000).delay(3000);
+               setTimeout(fadeTwo,6000);
+
+
+timedText(textArray)
+console.log(box)
+
 
 
 $(document).ready(function(){

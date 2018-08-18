@@ -154,7 +154,12 @@ section {
 
 .spotify {
     width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+
 /* --------------------------FORM AREA============================== */
 .contact {
     
@@ -212,14 +217,15 @@ button {
 }
 
 button:hover {
-    color: darkblue;
+    color: pink;
 }
 
 a:hover {
     text-decoration: none;
     font-size: 25px;
     letter-spacing: 0.5em;
-    transition: 0.5s
+    transition: 0.5s;
+    color: pink;
     
 }
 
@@ -257,6 +263,14 @@ a:hover {
     }
 }
 
+
+#hamburger {
+    display: none;
+}
+
+.smallNav{
+    display: none;
+}
 
 
 @keyframes movingForm {
@@ -312,10 +326,15 @@ a:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
+
+    }
+
+    a:hover {
+        font-size: 20px;
     }
 }
 
- 
+
 
 
 .contact {
@@ -325,3 +344,37 @@ a:hover {
 
 
 
+
+
+@media screen and (max-width: 400px) {
+    .smallNav {
+        display: block;
+    }
+    #hamburger {
+        display: flex;
+    
+
+    }
+
+    a:hover{
+        font-size: 14px;
+        color: pink;
+        letter-spacing: 0;
+        transition: none
+    }
+
+    .smallLi {
+        font-size: 10px;
+        border: 1px solid white;
+        width: 100%;
+    }
+
+    .smallColumn {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar {
+        display: none;
+    }
+}
