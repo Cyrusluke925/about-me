@@ -22,9 +22,9 @@ function timedText(arr) {
 };
 
 
-$(".one").fadeIn(6000,function() {
-               $(".one").fadeOut(6000).delay(3000);
-               setTimeout(fadeTwo,6000);
+		
+
+
 
 
 timedText(textArray)
@@ -33,6 +33,7 @@ console.log(box)
 
 
 $(document).ready(function(){
+
     // Add scrollspy to <body>
     $('body').scrollspy({target: ".navbar", offset: 50});   
 
@@ -65,3 +66,5 @@ $(document).ready(function(){
 
   });
 
+
+$('form')
