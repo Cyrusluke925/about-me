@@ -393,3 +393,94 @@ a:hover {
         margin: 1em 0;
     }
 }
+
+
+
+.lightbox,
+.lightbox * {
+  box-sizing: border-box;
+}
+
+.lightbox {
+  position: fixed;
+  z-index: 999;
+  top: 15px;
+  left: 15px;
+  bottom: 15px;
+  right: 15px;
+  text-align: center;
+  visibility: hidden;
+}
+
+.lightbox:before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  bottom: -15px;
+  right: -15px;
+  transition: all 500ms ease-out;
+}
+
+.lightbox img {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 20px black;
+  border: 5px solid white;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.lightbox:target {
+  visibility: visible;
+}
+
+.lightbox:target:before {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.lightbox:target:before {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.lightbox .close {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  background: black;
+  box-shadow: 0px 0px 5px white;
+}
+
+.lightbox .close:before,
+.lightbox .close:after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  content: "";
+  position: absolute;
+  display: block;
+  margin: auto;
+  width: 32px;
+  height: 0;
+  border-top: 2px solid white;
+  transform-origin: center;
+
+}
+
+.lightbox .close:before {
+  transform: rotate(45deg);
+}
+
+.lightbox .close:after {
+  transform: rotate(-45deg);
+}
+
+
+
